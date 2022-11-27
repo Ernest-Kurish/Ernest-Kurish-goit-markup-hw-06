@@ -143,7 +143,24 @@
             <textarea name="user-text" id="user-text" placeholder="Введіть текст" class="comments"></textarea>
            </div>
           
-          <button type="submit" class="button modal-button">Відправити</button>
+           <div class="modal-filed">
+             <input 
+             type="checkbox" 
+             name="policy" 
+             id="policy"
+             class="modal-check visibility-hidden">
+        <label 
+            for="policy"
+            class="check-text">
+          <span>
+          <svg class="check-icon" width="16" height="15">
+          <use href="./images/icons.svg#icon-v-checker"></use>
+        </svg>
+  </span>Погоджуюся з розсилкою та приймаю<a class="link-policy" href="#">Умови договору</a></label>
+            
+          </div>
+
+          <button type="submit" class="button primary modal-button">Відправити</button>
           </form>
         </div>
       </div>

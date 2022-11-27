@@ -453,7 +453,17 @@ padding-bottom: 34px;
   cursor: pointer;
   fill: none;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close {
+color: #2196f3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  border-color: rgba(33, 150, 243, 1);
 }
 
 .modal-btn-close:hover,
@@ -555,6 +565,99 @@ color: rgba(117, 117, 117, 0.5);
 }
 */
 
+.check-text {
+display: flex;
+align-items: center;
+margin-top: 25px;
+margin-bottom: 34px;
+margin-left: 13px;
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.check-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 16px;
+  height: 15px;
+  
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  fill: transparent;
+
+  transition: 
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:checked + .check-text span {
+  background-color: #2196F3;
+  border: none;
+  fill: #FFFFFF;
+}
+
+.modal-check:focus + .check-text span {
+  border-color: #2196F3;
+  /* border: none;
+  fill: #FFFFFF; */
+}
+
+
+.link-policy {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: none;
+text-decoration-line: underline;
+color: #2196F3;
+}
+
+/* .modal-button {
+min-width: 200px;
+padding: 10px 52px;
+margin: 0px;
+justify-content: center;
+cursor: pointer;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
+transition: 
+background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+} */
+  
+
 /* -----------------BUTTONS--------------------- */
 .pointer {
   cursor: pointer;
@@ -570,8 +673,6 @@ color: rgba(117, 117, 117, 0.5);
   background-color: var(--accent-color);
   font-size: 16px;
   padding: 12px 24px;
-  display: inline-block;
-  border: 1px solid black;
 
   transition: 
   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
